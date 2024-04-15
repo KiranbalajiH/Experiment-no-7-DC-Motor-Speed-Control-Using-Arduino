@@ -1,9 +1,9 @@
 ![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/739cc470-48c8-4873-a730-6319b4afc602)
 ###  DATE: 
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT:
+###  NAME: kiranbalaji H
+###  ROLL NO :212223040096
+###  DEPARTMENT:cse
 # Experiment-no-6-DC-Motor-Speed-Control-Using-Arduino
 ### AIM : To control the speed and the direction of a DC motor using L293D driver ic( H- bridge)
 
@@ -33,9 +33,31 @@ As shown in the circuit diagram we need only 3 Arduino terminal pins, pin 8 is f
 
 ### PROGRAM 
 
+int enable=2;
+int input1=3;
+int input2=4;
+
+void setup()
+{
+  pinMode(enable, OUTPUT);
+   pinMode(input1, OUTPUT);
+   pinMode(input2, OUTPUT);
+}
+
+void loop()
+{
+  analogWrite(enable ,255);
+  delay(1000); 
+  digitalWrite(input1, HIGH);
+  digitalWrite(input2, LOW);
+  delay(5000); 
+  digitalWrite(input1, LOW);
+}
 ### OUTPUT
+![WhatsApp Image 2024-04-04 at 10 07 57_08d604b8](https://github.com/KiranbalajiH/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/149135475/7361ee17-70a3-4f45-816b-3ae93d58dda3)
 
 ### GRAPH AND TABULATION 
+
 
 
 ![image](https://github.com/vasanthkumarch/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/36288975/07e9b28e-9a5b-47bd-a023-3c27fe00fb2b)
